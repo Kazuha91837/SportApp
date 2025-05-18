@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SportApp</string>
+    <string name="back_button_desc">Назад</string>
+    <string name="reset_button">Сбросить</string>
+    <string name="profile_title">Профиль</string>
+    <string name="name_hint">Имя</string>
+    <string name="age_hint">Возраст</string>
+    <string name="weight_hint">Вес (кг)</string>
+    <string name="height_hint">Рост (см)</string>
+    <string name="save_button">Сохранить</string>
+    <string name="day_prefix">День </string>
+    <string name="start">Старт</string>
+    <string name="stop">Стоп</string>
+    <string name="weeks_count">%d недель</string>
+    <string name="warm_up">Зарядка</string>
+    <string name="pushups">Отжимания</string>
+    <string name="squats">Приседания</string>
+    <string name="pullup">Подтягивания</string>
+    <string name="plank">Планка</string>
+    <string name="meditation">Медитация</string>
+    <string name="youtube_api_key">ВАШ_API_КЛЮЧ</string>
+</resources>

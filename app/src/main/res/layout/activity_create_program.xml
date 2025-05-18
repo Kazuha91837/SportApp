@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_program_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название программы" />
+
+    <EditText
+        android:id="@+id/et_program_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Описание программы"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_difficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_days"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btn_add_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить день"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btn_save_program"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить программу"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
