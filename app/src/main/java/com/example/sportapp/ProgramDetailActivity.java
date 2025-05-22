@@ -2,6 +2,7 @@ package com.example.sportapp;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -11,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class ProgramDetailActivity extends AppCompatActivity {
     private static final String TAG = "ProgramDetailActivity";
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,5 +73,7 @@ public class ProgramDetailActivity extends AppCompatActivity {
             Toast.makeText(this, "Ошибка загрузки программы", Toast.LENGTH_LONG).show();
             finish();
         }
+        ImageButton btnBack = findViewById(R.id.btn_back);
+        btnBack.setOnClickListener(v -> onBackPressed());
     }
 }

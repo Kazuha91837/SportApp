@@ -3,6 +3,8 @@ package com.example.sportapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btnExercises = findViewById(R.id.btnExercises);
-        Button btnProfile = findViewById(R.id.btnProfile);
+        ImageButton btnProfile = findViewById(R.id.btnProfile);
         Button btnCalendar = findViewById(R.id.btnCalendar);
         Button btnPrograms = findViewById(R.id.btnPrograms); // новая кнопка
 

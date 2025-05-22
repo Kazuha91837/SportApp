@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -20,6 +21,8 @@ public class CreateProgramActivity extends AppCompatActivity {
     private static final String TAG = "CreateProgramActivity";
     private DayAdapter adapter;
     private List<WorkoutDay> days = new ArrayList<>();
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +62,9 @@ public class CreateProgramActivity extends AppCompatActivity {
             Toast.makeText(this, "Ошибка инициализации", Toast.LENGTH_SHORT).show();
             finish();
         }
+
+        ImageButton btnBack = findViewById(R.id.btn_back);
+        btnBack.setOnClickListener(v -> onBackPressed());
     }
 
     private boolean validateInput(EditText etTitle, EditText etDescription) {

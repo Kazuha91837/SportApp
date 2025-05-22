@@ -16,6 +16,11 @@ public class CalendarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
+
         prefs = getSharedPreferences("FitnessPrefs", MODE_PRIVATE);
         calendarView = findViewById(R.id.calendarView);
         tvWorkoutInfo = findViewById(R.id.tvWorkoutInfo);
@@ -24,6 +29,15 @@ public class CalendarActivity extends AppCompatActivity {
             String dateKey = String.format("%d-%d-%d", year, month + 1, dayOfMonth);
             String workout = prefs.getString(dateKey, "Нет тренировок в этот день");
             tvWorkoutInfo.setText(workout);
+
+
         });
     }
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
 }
+
+

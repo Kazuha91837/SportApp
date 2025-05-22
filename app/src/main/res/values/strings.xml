@@ -19,4 +19,9 @@
     <string name="plank">Планка</string>
     <string name="meditation">Медитация</string>
     <string name="youtube_api_key">ВАШ_API_КЛЮЧ</string>
+    <string name="add_day_button">Добавить день</string>
+    <string name="save_program_button">Сохранить программу</string>
+    <string name="program_title_hint">Название программы</string>
+    <string name="program_desc_hint">Описание программы</string>
+    <string name="create_program_title">Создание программы</string>
 </resources>

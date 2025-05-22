@@ -19,6 +19,8 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
 
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -72,5 +74,6 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+
     </application>
 </manifest>
